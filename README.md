@@ -16,7 +16,7 @@ Member extends Person. That is single inheritance.
 LibraryStaff also extends Person, and it is abstract.
 Librarian and LibraryAssistant both extend LibraryStaff. That is hierarchical inheritance.
 SeniorLibrarian extends Librarian. The full line is Person, LibraryStaff, Librarian, SeniorLibrarian. That is multilevel inheritance.
-A Java class can not extend two classes at the same time. Librarian implements Reportable and Reservable instead. Class inheritance plus interfaces is hybrid inheritance.
+A Java class cannot extend two classes at the same time. Librarian implements Reportable and Reservable instead. Class inheritance plus interfaces is hybrid inheritance.
 
 What the numbers do
 Late fee is 1 dollar for each overdue day, unless a daily rate is passed in.

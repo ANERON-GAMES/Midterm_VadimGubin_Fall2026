@@ -32,7 +32,7 @@ public class Librarian extends LibraryStaff implements Reportable, Reservable {
 
 	public double calculateLateFee(int daysOverdue, double dailyRate) {
 		if (daysOverdue < 0) {
-			System.out.println("Late fee failed. Days can not be negative.");
+			System.out.println("Late fee failed. Days cannot be negative.");
 			return -1;
 		}
 		if (dailyRate <= 0) {
@@ -47,9 +47,7 @@ public class Librarian extends LibraryStaff implements Reportable, Reservable {
 	}
 
 	public void displayStaffDetails() {
-		super.displayStaffDetails();
-		System.out.println("Daily issue limit: " + dailyIssueLimit);
-		System.out.println("Books processed: " + booksProcessed);
+		System.out.println("Librarian  " + getName() + "  books " + booksProcessed + "  salary " + getMonthlySalary());
 	}
 
 	public String getRoleDescription() {

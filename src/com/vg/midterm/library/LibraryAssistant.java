@@ -31,9 +31,7 @@ public class LibraryAssistant extends LibraryStaff {
 	}
 
 	public void displayStaffDetails() {
-		super.displayStaffDetails();
-		System.out.println("Shift: " + shiftType);
-		System.out.println("Shift allowance: " + shiftAllowance);
+		System.out.println("Assistant  " + getName() + "  shift " + shiftType + "  allowance " + shiftAllowance);
 	}
 
 	public String getRoleDescription() {

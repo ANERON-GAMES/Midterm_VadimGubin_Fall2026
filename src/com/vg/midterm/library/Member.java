@@ -55,7 +55,7 @@ public class Member extends Person {
 		}
 
 		Member member = new Member(personId, name, phoneNumber, memberNumber, age, membershipType);
-		System.out.println("Member registred. Number " + memberNumber);
+		System.out.println("Member registered. Number " + memberNumber);
 		return member;
 	}
 
@@ -80,10 +80,6 @@ public class Member extends Person {
 	}
 
 	public void displayMemberDetails() {
-		displayBasicDetails();
-		System.out.println("Member number: " + memberNumber);
-		System.out.println("Age: " + age);
-		System.out.println("Type: " + membershipType);
-		System.out.println("Outstanding fees: " + outstandingFees);
+		System.out.println("Member  " + getName() + "  " + memberNumber + "  age " + age + "  " + membershipType);
 	}
 }

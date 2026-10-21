@@ -26,15 +26,16 @@ public class SeniorLibrarian extends Librarian {
 		return seniorityAllowance;
 	}
 
-	// overrided pay: librarian pay plus the seniority allowance
 	public double calculateMonthlyCompensation() {
 		return super.calculateMonthlyCompensation() + seniorityAllowance;
 	}
 
+	public String generateReport() {
+		return "Senior librarian report. Books processed: " + getBooksProcessed();
+	}
+
 	public void displayStaffDetails() {
-		super.displayStaffDetails();
-		System.out.println("Specialization: " + specialization);
-		System.out.println("Seniority allowance: " + seniorityAllowance);
+		System.out.println("Senior librarian  " + getName() + "  books " + getBooksProcessed() + "  allowance " + seniorityAllowance);
 	}
 
 	public String getRoleDescription() {
